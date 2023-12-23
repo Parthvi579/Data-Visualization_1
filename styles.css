@@ -1,0 +1,123 @@
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  margin-left: 130px;
+
+}
+
+.dropdown {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+/* Define CSS styles for the line chart */
+.tooltip {
+    position: absolute;
+    z-index: 9999;
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px;
+  }
+  /* Charts Display side by side */
+.chart-container {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+/* Increase the chart size by 50% */
+.chart-container .chart {
+  width: 150%; /* set the width to 150% */
+  height: 150%; /* set the height to 150% */
+}
+.chart {
+   flex-basis: calc(50% - 10px);
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .chart {
+    flex-basis: 100%;
+  }
+}
+
+  /* Define CSS styles for the bar-line chart */
+  .axis path,
+    .axis line {
+      fill: none;
+      stroke: black;
+      shape-rendering: crispEdges;
+    }
+
+    .axis text {
+      font-family: sans-serif;
+      font-size: 11px;
+    }
+
+    .bar {
+      fill: #807dba;
+    }
+
+    .line {
+      fill: none;
+      stroke: red;
+      stroke-width: 2px;
+    }
+
+    .maptooltip {
+        position: absolute;
+        text-align: left;
+        width: 150px;
+        height: 56px;
+        padding: 2px;
+        font: 12px sans-serif;
+        background: rgb(155, 142, 164);
+        border: 0px;
+        pointer-events: none;
+      }
+      
+  /* Define CSS styles for the staked bar chart */
+  #staked-bar-chart {
+    font-family: sans-serif;
+    padding: 50px;
+  }
+
+  .axis-x text {
+    font-size: 14px;
+    text-anchor: middle;
+  }
+
+  .axis-y text {
+    font-size: 14px;
+    text-anchor: end;
+  }
+
+  .legend rect {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+
+  .legend text {
+    font-size: 14px;
+    fill: #333;
+  }
+.maptooltip {
+    position: absolute;
+    text-align: left;
+    width: 150px;
+    height: 56px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: goldenrod;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+  }
